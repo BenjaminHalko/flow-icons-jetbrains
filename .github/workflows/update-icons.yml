@@ -4,11 +4,6 @@ on:
   schedule:
     - cron: "0 0 * * 1"
   workflow_dispatch:
-    inputs:
-      force:
-        description: "Re-extract and release even if the version is unchanged"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -33,8 +28,6 @@ jobs:
 
       - name: Sync base icons from Open VSX
         id: sync
-        env:
-          FLOW_FORCE: ${{ inputs.force }}
         run: node tools/update-icons.cjs
 
       - name: Commit updated icons
