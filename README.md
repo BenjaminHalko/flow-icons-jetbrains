@@ -15,10 +15,8 @@ ported from the [Flow Icons](https://flow-icons.pages.dev) VSCode extension.
 
 ## Installation
 
-### From a release
-
 1. Download the latest `Flow Icons-<version>.zip` from the
-   [Releases](../../releases) page.
+   [Releases](../../releases/latest) page.
 2. In the IDE: **Settings → Plugins → ⚙ → Install Plugin from Disk…**,
    pick the zip, and restart.
 
