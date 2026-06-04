@@ -1,0 +1,72 @@
+<idea-plugin>
+    <id>dev.flowicons.jetbrains</id>
+    <name>Flow Icons</name>
+    <vendor url="https://flow-icons.pages.dev">Benjamin Halko</vendor>
+
+    <description
+    ><![CDATA[
+        <p>🌼 A brand new premium icon pack</p>
+    ]]></description>
+
+    <!-- modules.lang is required for the Project View decorator and is present in all JetBrains IDEs. -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <resource-bundle>messages.FlowIconsBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Persisted, non-secret settings (variant, Flow You palette, premium version/path). -->
+        <applicationService
+            serviceImplementation="dev.flowicons.settings.FlowIconsSettings"
+        />
+
+        <!-- Settings UI under Appearance & Behavior. -->
+        <applicationConfigurable
+            parentId="appearance"
+            id="dev.flowicons.settings.FlowIconsConfigurable"
+            instance="dev.flowicons.settings.FlowIconsConfigurable"
+            key="settings.displayName"
+            bundle="messages.FlowIconsBundle"
+        />
+
+        <!-- Project View tree icons (files + folders). -->
+        <projectViewNodeDecorator
+            implementation="dev.flowicons.icons.FlowProjectViewNodeDecorator"
+        />
+
+        <!-- Editor-tab / general file icons. -->
+        <fileIconProvider
+            implementation="dev.flowicons.icons.FlowFileIconProvider"
+        />
+
+        <!-- On startup, check for a newer premium icon set when a license key is present. -->
+        <postStartupActivity
+            implementation="dev.flowicons.FlowIconsStartupActivity"
+        />
+
+        <notificationGroup id="Flow Icons" displayType="BALLOON" />
+    </extensions>
+
+    <applicationListeners>
+        <!-- Re-applies the "Hides explorer arrows" override after a theme change. -->
+        <listener
+            class="dev.flowicons.icons.FlowLafListener"
+            topic="com.intellij.ide.ui.LafManagerListener"
+        />
+    </applicationListeners>
+
+    <actions>
+        <!-- Mirror the VSCode flow-icons.downloadIcons / flow-icons.rebuildIcons commands. -->
+        <action
+            id="dev.flowicons.DownloadIcons"
+            class="dev.flowicons.actions.FlowDownloadIconsAction"
+            text="Flow Icons: Download Icons"
+            description="Download or update the premium Flow Icons set"
+        />
+        <action
+            id="dev.flowicons.RebuildIcons"
+            class="dev.flowicons.actions.FlowRebuildIconsAction"
+            text="Flow Icons: Rebuild Icons"
+            description="Rebuild the Flow You icons from the current palette"
+        />
+    </actions>
+</idea-plugin>

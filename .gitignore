@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+.kotlin/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ / IDE
+.idea/
+*.iml
+.intellijPlatform/
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# MacOS
+.DS_Store
+
+# Config
+config.json

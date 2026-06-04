@@ -1,0 +1,63 @@
+name: Update Icons
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-extract and release even if the version is unchanged"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-icons
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.sync.outputs.version }}
+      changed: ${{ steps.sync.outputs.changed }}
+      sha: ${{ steps.commit.outputs.commit_hash }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Sync base icons from Open VSX
+        id: sync
+        env:
+          FLOW_FORCE: ${{ inputs.force }}
+        run: node tools/update-icons.cjs
+
+      - name: Commit updated icons
+        id: commit
+        if: steps.sync.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update Flow Icons to ${{ steps.sync.outputs.version }}"
+          file_pattern: >-
+            src/main/resources/icons/
+            src/main/resources/flow-you-templates/
+            src/main/resources/flow/mapping.json
+            src/main/resources/flow/packs.json
+            src/main/resources/flow/icons.json
+            .icon-version
+            gradle.properties
+
+  release:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    permissions:
+      contents: write
+    uses: ./.github/workflows/release.yml
+    with:
+      version: ${{ needs.sync.outputs.version }}
+      ref: ${{ needs.sync.outputs.sha }}
