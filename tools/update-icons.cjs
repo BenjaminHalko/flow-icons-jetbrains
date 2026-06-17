@@ -23,9 +23,6 @@
  * the CI workflow can decide whether to build + release.
  *
  * Zero dependencies (Node built-in https + zlib).
- *
- * Env:
- *   FLOW_FORCE=true   re-extract and report changed even if the version matches.
  */
 
 const https = require("https");
@@ -226,7 +223,7 @@ async function main() {
 
   const current = readVersion();
   const iconsPresent = fs.existsSync(path.join(ICONS_DIR, "deep"));
-  if (!force && current === version && iconsPresent) {
+  if (current === version && iconsPresent) {
     console.log("Already up to date.");
     emitOutputs(version, false);
     return;
