@@ -1,4 +1,4 @@
-﻿3d.svg
+3d.svg
 android.svg
 angular.svg
 applescript.svg
@@ -120,6 +120,8 @@ folder_bower.svg
 folder_bower_open.svg
 folder_brown.svg
 folder_brown_open.svg
+folder_bruno.svg
+folder_bruno_open.svg
 folder_buildkite.svg
 folder_buildkite_open.svg
 folder_cargo.svg
@@ -130,6 +132,8 @@ folder_changesets.svg
 folder_changesets_open.svg
 folder_chart.svg
 folder_chart_open.svg
+folder_chevron.svg
+folder_chevron_open.svg
 folder_circleci.svg
 folder_circleci_open.svg
 folder_class.svg
@@ -148,6 +152,8 @@ folder_cloudflare.svg
 folder_cloudflare_open.svg
 folder_cloudflare_worker.svg
 folder_cloudflare_worker_open.svg
+folder_cmake.svg
+folder_cmake_open.svg
 folder_codesandbox.svg
 folder_codesandbox_open.svg
 folder_codex.svg
@@ -188,6 +194,8 @@ folder_cue.svg
 folder_cue_open.svg
 folder_cursor.svg
 folder_cursor_open.svg
+folder_curve.svg
+folder_curve_open.svg
 folder_custom.svg
 folder_custom_open.svg
 folder_cypress.svg
@@ -246,6 +254,8 @@ folder_favicon.svg
 folder_favicon_open.svg
 folder_features.svg
 folder_features_open.svg
+folder_files.svg
+folder_files_open.svg
 folder_filter.svg
 folder_filter_open.svg
 folder_firebase.svg
@@ -326,12 +336,16 @@ folder_infrastructure.svg
 folder_infrastructure_open.svg
 folder_input.svg
 folder_input_open.svg
+folder_instruction.svg
+folder_instruction_open.svg
 folder_intellij.svg
 folder_intellij_open.svg
 folder_interceptor.svg
 folder_interceptor_open.svg
 folder_interface.svg
 folder_interface_open.svg
+folder_internal.svg
+folder_internal_open.svg
 folder_ios.svg
 folder_ios_open.svg
 folder_java.svg
@@ -418,6 +432,8 @@ folder_nginx.svg
 folder_nginx_open.svg
 folder_node.svg
 folder_node_open.svg
+folder_note.svg
+folder_note_open.svg
 folder_notification.svg
 folder_notification_open.svg
 folder_nuget.svg
@@ -426,10 +442,14 @@ folder_nuxt.svg
 folder_nuxt_open.svg
 folder_nx.svg
 folder_nx_open.svg
+folder_object.svg
+folder_object_open.svg
 folder_obsidian.svg
 folder_obsidian_open.svg
 folder_opencode.svg
 folder_opencode_open.svg
+folder_option.svg
+folder_option_open.svg
 folder_orange.svg
 folder_orange_open.svg
 folder_organism.svg
@@ -446,6 +466,10 @@ folder_other.svg
 folder_other_open.svg
 folder_packages.svg
 folder_packages_open.svg
+folder_particle.svg
+folder_particle_open.svg
+folder_path.svg
+folder_path_open.svg
 folder_pdf.svg
 folder_pdf_open.svg
 folder_pdm.svg
@@ -460,12 +484,16 @@ folder_plastic.svg
 folder_plastic_open.svg
 folder_plugin.svg
 folder_plugin_open.svg
+folder_policy.svg
+folder_policy_open.svg
 folder_postman.svg
 folder_postman_open.svg
 folder_powershell.svg
 folder_powershell_open.svg
 folder_pre_commit.svg
 folder_pre_commit_open.svg
+folder_prefab.svg
+folder_prefab_open.svg
 folder_prisma.svg
 folder_prisma_open.svg
 folder_private.svg
@@ -488,6 +516,8 @@ folder_quasar.svg
 folder_quasar_open.svg
 folder_queue.svg
 folder_queue_open.svg
+folder_r.svg
+folder_r_open.svg
 folder_react_components.svg
 folder_react_components_open.svg
 folder_red.svg
@@ -508,6 +538,8 @@ folder_rocket.svg
 folder_rocket_open.svg
 folder_roocode.svg
 folder_roocode_open.svg
+folder_room.svg
+folder_room_open.svg
 folder_root.svg
 folder_root_open.svg
 folder_routes.svg
@@ -540,6 +572,8 @@ folder_secure.svg
 folder_secure_open.svg
 folder_seeders.svg
 folder_seeders_open.svg
+folder_sequence.svg
+folder_sequence_open.svg
 folder_serena.svg
 folder_serena_open.svg
 folder_server.svg
@@ -552,6 +586,8 @@ folder_shared.svg
 folder_shared_open.svg
 folder_simulations.svg
 folder_simulations_open.svg
+folder_skeleton.svg
+folder_skeleton_open.svg
 folder_skills.svg
 folder_skills_open.svg
 folder_sky.svg
@@ -562,6 +598,8 @@ folder_socket.svg
 folder_socket_open.svg
 folder_socketio.svg
 folder_socketio_open.svg
+folder_sprite.svg
+folder_sprite_open.svg
 folder_src.svg
 folder_src_open.svg
 folder_src_tauri.svg
@@ -590,6 +628,8 @@ folder_svelte.svg
 folder_svelte_open.svg
 folder_svg.svg
 folder_svg_open.svg
+folder_swift.svg
+folder_swift_open.svg
 folder_syntax.svg
 folder_syntax_open.svg
 folder_tabs.svg
@@ -614,6 +654,8 @@ folder_test.svg
 folder_test_open.svg
 folder_theme.svg
 folder_theme_open.svg
+folder_tile.svg
+folder_tile_open.svg
 folder_toc.svg
 folder_toc_open.svg
 folder_tools.svg
