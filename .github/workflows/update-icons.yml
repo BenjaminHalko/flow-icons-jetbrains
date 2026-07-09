@@ -33,7 +33,7 @@ jobs:
       - name: Commit updated icons
         id: commit
         if: steps.sync.outputs.changed == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update Flow Icons to ${{ steps.sync.outputs.version }}"
           file_pattern: >-
