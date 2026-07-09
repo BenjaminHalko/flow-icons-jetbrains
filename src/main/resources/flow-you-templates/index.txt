@@ -154,6 +154,8 @@ folder_cloudflare_worker.svg
 folder_cloudflare_worker_open.svg
 folder_cmake.svg
 folder_cmake_open.svg
+folder_codegraph.svg
+folder_codegraph_open.svg
 folder_codesandbox.svg
 folder_codesandbox_open.svg
 folder_codex.svg
