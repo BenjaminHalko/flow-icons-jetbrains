@@ -1,4 +1,5 @@
 3d.svg
+7zip.svg
 android.svg
 angular.svg
 applescript.svg
@@ -166,6 +167,8 @@ folder_components.svg
 folder_components_open.svg
 folder_composables.svg
 folder_composables_open.svg
+folder_conductor.svg
+folder_conductor_open.svg
 folder_config.svg
 folder_config_open.svg
 folder_connection.svg
@@ -706,6 +709,8 @@ folder_vuepress.svg
 folder_vuepress_open.svg
 folder_warning.svg
 folder_warning_open.svg
+folder_webp.svg
+folder_webp_open.svg
 folder_webpack.svg
 folder_webpack_open.svg
 folder_windows.svg
@@ -817,6 +822,7 @@ python_misc.svg
 qsharp.svg
 r.svg
 racket.svg
+rar.svg
 razor.svg
 react.svg
 react_ts.svg
@@ -870,6 +876,7 @@ vscode.svg
 vue.svg
 vue_config.svg
 webassembly.svg
+webp.svg
 webpack.svg
 word.svg
 xmake.svg
