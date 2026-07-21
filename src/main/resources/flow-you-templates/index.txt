@@ -193,6 +193,8 @@ folder_core.svg
 folder_core_open.svg
 folder_coverage.svg
 folder_coverage_open.svg
+folder_crush.svg
+folder_crush_open.svg
 folder_css.svg
 folder_css_open.svg
 folder_cue.svg
@@ -313,6 +315,8 @@ folder_gray.svg
 folder_gray_open.svg
 folder_green.svg
 folder_green_open.svg
+folder_grype.svg
+folder_grype_open.svg
 folder_guard.svg
 folder_guard_open.svg
 folder_gulp.svg
@@ -739,6 +743,9 @@ gitpod.svg
 gleam.svg
 go.svg
 godot.svg
+godot_alt.svg
+godot_assets.svg
+godot_assets_alt.svg
 gradle.svg
 gradlew.svg
 graphql.svg
@@ -798,6 +805,7 @@ ocaml.svg
 opa.svg
 opam.svg
 openapi.svg
+otf.svg
 pdf.svg
 perl.svg
 php.svg
@@ -807,6 +815,7 @@ pnpm.svg
 pnpm_lock.svg
 postcss.svg
 powerpoint.svg
+powershell.svg
 pre_commit.svg
 prettier.svg
 prettier_ignore.svg
@@ -852,6 +861,7 @@ svg.svg
 swift.svg
 table.svg
 tailwindcss.svg
+tar.svg
 templ.svg
 template.svg
 terraform.svg
@@ -860,6 +870,7 @@ tex.svg
 toml.svg
 tree.svg
 tsconfig.svg
+ttf.svg
 tune.svg
 twig.svg
 twine.svg
